@@ -5056,11 +5056,17 @@ console.log(`    ASTRAL ENGINE - RAT EDITION   `);
 console.log(`    STATUS : PERSISTENCE ACTIVE        `);
 console.log(`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`);
 
-// ===== START SERVER (HANYA SATU APP.LISTEN) =====
+// ===== START SERVER (DIHAPUS/KOMENTARI KARENA PAKAI VERCEL) =====
+/*
 app.listen(PORT, () => {
   console.log(`🚀 Server aktif di http://localhost:${PORT}`);
   startVipSessions();
-  startUserSessions();
+  startUsersSessions();
+});
+*/
+
+// Tambahkan ini di baris paling bawah sekali:
+module.exports = app;
 
   console.log(`[AUTO REFRESH] Diatur setiap 30 menit sekali.`);
   setInterval(autoRefresh, THIRTY_MINUTES);
