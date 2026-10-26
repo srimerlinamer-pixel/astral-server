@@ -5065,4 +5065,8 @@ app.listen(PORT, () => {
 });
 */
 
-  module.exports = app;
+app.get('/', (req, res) => {
+  res.send('Astral Server is Running 24/7! 🚀');
+});
+
+module.exports = app;
