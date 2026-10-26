@@ -5065,11 +5065,4 @@ app.listen(PORT, () => {
 });
 */
 
-// Tambahkan ini di baris paling bawah sekali:
-module.exports = app;
-
-  console.log(`[AUTO REFRESH] Diatur setiap 30 menit sekali.`);
-  setInterval(autoRefresh, THIRTY_MINUTES);
-  console.log(`[AUTOCLEAN LOGS] Diatur setiap jam 12 malam WIB.`);
-  scheduleAutoClean();
-});
+  module.exports = app;
