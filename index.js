@@ -5056,17 +5056,10 @@ console.log(`    ASTRAL ENGINE - RAT EDITION   `);
 console.log(`    STATUS : PERSISTENCE ACTIVE        `);
 console.log(`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`);
 
-// ===== START SERVER (DIHAPUS/KOMENTARI KARENA PAKAI VERCEL) =====
-/*
+// ===== START SERVER (UNTUK RAILWAY) =====
+const PORT = process.env.PORT || 3000;
+
 app.listen(PORT, () => {
-  console.log(`🚀 Server aktif di http://localhost:${PORT}`);
-  startVipSessions();
-  startUsersSessions();
-});
-*/
-
-app.get('/', (req, res) => {
-  res.send('Astral Server is Running 24/7! 🚀');
+  console.log(`🚀 Server aktif dan berjalan di port ${PORT}`);
 });
 
-module.exports = app;
